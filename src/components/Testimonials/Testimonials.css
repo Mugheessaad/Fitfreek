@@ -1,0 +1,113 @@
+.testimonials{
+    display: flex;
+    gap: 1rem;
+    padding: 0.2rem;
+    padding-left: 3rem;
+}
+.left-t{
+    display: flex;
+    flex: 1 1;
+    gap: 3rem;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: white;
+}
+.left-t>:nth-child(1){
+    color: var(--orange);
+    font-weight: bold;
+
+}
+.left-t>:nth-child(2){
+    font-weight: bold;
+    font-size: 3rem;
+}
+.left-t>:nth-child(4){
+        text-transform: none;
+        text-align: justify;
+        letter-spacing: 2px;
+        line-height: 40px;
+}
+.right-t{
+    flex: 1;
+    position: relative;
+}
+.right-t>img{
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    object-fit: cover;
+    right: 8rem;
+    top: 2rem;
+}
+.right-t>:nth-child(1){
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    border: 2px solid orange;
+    background-color: transparent;
+    right: 9rem;
+    top: 0.9rem;
+}
+.right-t>:nth-child(2){
+    position: absolute;
+    width: 17rem;
+    height: 19rem;
+    right: 7rem;
+    top: 4rem;
+    background: var(--planCard);
+}
+.arrows{
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 3rem;
+}
+.arrows>img{
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width : 768px){
+.testimonials{
+    flex-direction: column;
+    padding-left: 1rem;
+}
+.left-t{
+    /* font-size: large; */
+    gap: 2rem;
+}
+.left-t>:nth-child(2){
+    font-size: xx-large;
+}
+.left-t>:nth-child(4){
+    letter-spacing: 1px;
+    justify-content: center;
+    display: flex;
+    text-align: start;
+}
+.right-t>div{
+    position: relative;
+    display: none;
+}
+.right-t>img{
+    top: 0;
+    right: 0;
+    position: relative;
+    align-self: center;
+    width: 16rem;
+    height: 16rem;
+}
+.right-t>:last-child{
+    top: 2rem; 
+    left: 6rem;
+    display: block;
+    gap: 1rem;
+}
+.arrows>:first-child{
+    padding-right: 5px;
+}
+.arrows>:last-child{
+    padding-left: 5px;
+}
+}
